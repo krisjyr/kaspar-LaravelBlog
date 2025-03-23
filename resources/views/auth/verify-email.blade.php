@@ -1,4 +1,14 @@
-<x-guest-layout>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body class="font-sans text-gray-900 antialiased">
+    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+        <div
+            class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
 <div class="max-w-md mx-auto">
     <div class="card bg-base-100/50 backdrop-blur-lg shadow-xl border border-base-content/10">
         <div class="card-body">
@@ -37,4 +47,9 @@
         </div>
     </div>
 </div>
-</x-guest-layout>
+
+</div>
+</div>
+</body>
+
+</html>
